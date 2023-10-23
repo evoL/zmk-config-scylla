@@ -3,15 +3,27 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         Base {
             bindings = <
-&mo 2      &kp N1          &kp N2          &kp N3       &kp N4         &kp N5      &kp N6   &kp N7         &kp N8       &kp N9      &kp N0      &trans
-&kp GRAVE  &kp Q           &kp W           &kp F        &kp P          &kp B       &kp J    &kp L          &kp U        &kp Y       &kp SEMI    &kp APOSTROPHE
-&kp MINUS  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHIFT T   &kp G       &kp M    &mt RSHIFT N   &mt RCTRL E  &mt RALT I  &mt RGUI O  &kp EQUAL
-&trans     &kp Z           &kp X           &kp C        &kp D          &kp V       &kp K    &kp H          &kp COMMA    &kp DOT     &kp SLASH   &kp BACKSLASH
+&mo 2      &kp N1          &kp N2          &kp N3       &kp N4         &kp N5      &kp N6   &kp N7         &kp N8               &kp N9      &kp N0           &trans
+&kp GRAVE  &kp Q           &kp W           &kp F        &kp P          &kp B       &kp J    &kp L          &kp U                &kp Y       &kp SEMI         &kp APOSTROPHE
+&kp MINUS  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LSHIFT T   &kp G       &kp M    &hm RSHIFT N   &hm RIGHT_CONTROL E  &hm RALT I  &hm RIGHT_GUI O  &kp EQUAL
+&trans     &kp Z           &kp X           &kp C        &kp D          &kp V       &kp K    &kp H          &kp COMMA            &kp DOT     &kp SLASH        &kp BACKSLASH
                                            &kp ESC      &kp BACKSPACE  &kp DELETE  &kp TAB  &lt 1 SPACE    &kp ENTER
                                                         &trans         &trans      &trans   &kp RIGHT_ALT
             >;
