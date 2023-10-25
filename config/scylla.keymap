@@ -21,8 +21,8 @@
         Base {
             bindings = <
 &mo 2          &kp N1          &kp N2          &kp N3       &kp N4        &kp N5  &kp N6   &kp N7         &kp N8               &kp N9      &kp N0           &trans
-&kp GRAVE      &kp Q           &kp W           &kp F        &kp P         &kp B   &kp J    &kp L          &kp U                &kp Y       &kp APOSTROPHE   &kp BACKSPACE
-&kp MINUS      &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LSHIFT T  &kp G   &kp M    &hm RSHIFT N   &hm RIGHT_CONTROL E  &hm RALT I  &hm RIGHT_GUI O  &kp EQUAL
+&kp GRAVE      &kp Q           &kp W           &kp F        &kp P         &kp B   &kp J    &kp L          &kp U                &kp Y       &kp EQUAL        &kp BACKSPACE
+&kp MINUS      &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LSHIFT T  &kp G   &kp M    &hm RSHIFT N   &hm RIGHT_CONTROL E  &hm RALT I  &hm RIGHT_GUI O  &kp APOSTROPHE
 &kp SEMICOLON  &kp Z           &kp X           &kp C        &kp D         &kp V   &kp K    &kp H          &kp COMMA            &kp DOT     &kp SLASH        &kp BACKSLASH
                                                &kp ESC      &mo 1         &trans  &kp TAB  &kp SPACE      &kp ENTER
                                                             &trans        &trans  &trans   &kp RIGHT_ALT
