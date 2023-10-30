@@ -23,23 +23,23 @@
 
         Base {
             bindings = <
-&mo 4      &trans          &trans          &trans       &trans        &trans  &trans   &trans         &trans               &trans      &trans           &trans
-&kp GRAVE  &kp Q           &kp W           &kp F        &kp P         &kp B   &kp J    &kp L          &kp U                &kp Y       &kp SEMICOLON    &kp BACKSPACE
-&kp MINUS  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LSHIFT T  &kp G   &kp M    &hm RSHIFT N   &hm RIGHT_CONTROL E  &hm RALT I  &hm RIGHT_GUI O  &kp APOSTROPHE
-&kp EQUAL  &kp Z           &kp X           &kp C        &kp D         &kp V   &kp K    &kp H          &kp COMMA            &kp DOT     &kp SLASH        &kp BACKSLASH
-                                           &kp ESC      &mo 1         &trans  &kp TAB  &lt 2 SPACE    &kp ENTER
-                                                        &kp LGUI      &trans  &trans   &kp RIGHT_ALT
+&mo 4      &trans          &trans          &trans       &trans        &trans         &trans   &trans         &trans               &trans      &trans           &trans
+&kp GRAVE  &kp Q           &kp W           &kp F        &kp P         &kp B          &kp J    &kp L          &kp U                &kp Y       &kp SEMICOLON    &kp BACKSPACE
+&kp MINUS  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LSHIFT T  &kp G          &kp M    &hm RSHIFT N   &hm RIGHT_CONTROL E  &hm RALT I  &hm RIGHT_GUI O  &kp APOSTROPHE
+&kp EQUAL  &kp Z           &kp X           &kp C        &kp D         &kp V          &kp K    &kp H          &kp COMMA            &kp DOT     &kp SLASH        &kp BACKSLASH
+                                           &kp ESC      &mo 1         &kp BACKSPACE  &kp TAB  &lt 2 SPACE    &kp ENTER
+                                                        &kp LGUI      &kp DELETE     &trans   &kp RIGHT_ALT
             >;
         };
 
         MoreKeys {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                &trans                 &trans    &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans     &trans     &trans     &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-                        &trans  &trans  &trans                &trans                 &mo 3     &trans
-                                &trans  &trans                &trans                 &trans
+&trans  &trans            &trans             &trans                &trans                 &trans  &trans    &trans         &trans     &trans     &trans  &trans
+&trans  &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans    &trans         &trans     &trans     &trans  &kp DELETE
+&trans  &trans            &trans             &trans                &trans                 &trans  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
+                                             &trans                &trans                 &trans  &trans    &mo 3          &trans
+                                                                   &trans                 &trans  &trans    &trans
             >;
         };
 
