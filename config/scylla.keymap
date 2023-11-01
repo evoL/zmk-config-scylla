@@ -24,7 +24,7 @@
         Base {
             bindings = <
 &mo 4      &trans          &trans          &trans       &trans        &trans         &trans   &trans         &trans               &trans      &trans           &trans
-&kp GRAVE  &kp Q           &kp W           &kp F        &kp P         &kp B          &kp J    &kp L          &kp U                &kp Y       &kp SEMICOLON    &kp BACKSPACE
+&kp GRAVE  &kp Q           &kp W           &kp F        &kp P         &kp B          &kp J    &kp L          &kp U                &kp Y       &kp SEMICOLON    &trans
 &kp MINUS  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S  &hm LSHIFT T  &kp G          &kp M    &hm RSHIFT N   &hm RIGHT_CONTROL E  &hm RALT I  &hm RIGHT_GUI O  &kp APOSTROPHE
 &kp EQUAL  &kp Z           &kp X           &kp C        &kp D         &kp V          &kp K    &kp H          &kp COMMA            &kp DOT     &kp SLASH        &kp BACKSLASH
                                            &kp ESC      &mo 2         &kp BACKSPACE  &kp TAB  &lt 1 SPACE    &kp ENTER
@@ -34,12 +34,12 @@
 
         MoreKeys {
             bindings = <
-&trans  &trans            &trans             &trans                &trans                 &trans  &trans    &trans         &trans     &trans     &trans  &trans
-&trans  &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans    &trans         &trans     &trans     &trans  &kp DELETE
-&trans  &trans            &trans             &trans                &trans                 &trans  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
-                                             &trans                &mo 3                  &trans  &trans    &trans         &trans
-                                                                   &trans                 &trans  &trans    &trans
+&none  &none             &none              &none                 &none                  &none  &none     &none          &none      &none      &none  &none
+&none  &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none     &none          &none      &none      &none  &none
+&none  &trans            &trans             &trans                &trans                 &none  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &none  &none
+&none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &none  &none
+                                            &none                 &mo 3                  &none  &none     &none          &none
+                                                                  &none                  &none  &none     &none
             >;
         };
 
