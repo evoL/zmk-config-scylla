@@ -33,6 +33,23 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <48 49 50 51 52 53 54 55 56 57 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
         };
+        smart_shift: smart_shift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SMART_SHIFT";
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
+    macros {
+        iterm: iterm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_COMMAND>;
+            label = "ITERM";
+        };
     };
 
     keymap {
@@ -40,12 +57,12 @@
 
         Base {
             bindings = <
-&mo 4      &trans           &trans           &trans        &trans         &trans         &trans   &trans         &trans                &trans       &trans            &trans
-&kp GRAVE  &kp Q            &kp W            &kp F         &kp P          &kp B          &kp J    &kp L          &kp U                 &kp Y        &kp SEMICOLON     &trans
-&kp MINUS  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LSHIFT T  &kp G          &kp M    &hmr RSHIFT N  &hmr RIGHT_CONTROL E  &hmr RALT I  &hmr RIGHT_GUI O  &kp APOSTROPHE
-&kp EQUAL  &kp Z            &kp X            &kp C         &kp D          &kp V          &kp K    &kp H          &kp COMMA             &kp DOT      &kp SLASH         &kp BACKSLASH
-                                             &kp ESC       &mo 2          &kp BACKSPACE  &kp TAB  &lt 1 SPACE    &kp ENTER
-                                                           &kp LGUI       &kp DELETE     &trans   &kp RIGHT_ALT
+&mo 4      &trans           &trans           &trans        &trans         &trans        &trans         &trans         &trans                &trans       &trans            &trans
+&kp GRAVE  &kp Q            &kp W            &kp F         &kp P          &kp B         &kp J          &kp L          &kp U                 &kp Y        &kp SEMICOLON     &trans
+&kp MINUS  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LSHIFT T  &kp G         &kp M          &hmr RSHIFT N  &hmr RIGHT_CONTROL E  &hmr RALT I  &hmr RIGHT_GUI O  &kp APOSTROPHE
+&kp EQUAL  &kp Z            &kp X            &kp C         &kp D          &kp V         &kp K          &kp H          &kp COMMA             &kp DOT      &kp SLASH         &kp BACKSLASH
+                                             &kp ESC       &mo 2          &smart_shift  &kp BACKSPACE  &lt 1 SPACE    &kp ENTER
+                                                           &iterm         &trans        &kp DELETE     &sk RIGHT_ALT
             >;
         };
 
