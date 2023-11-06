@@ -58,7 +58,7 @@
         Base {
             bindings = <
 &mo 4      &trans           &trans           &trans        &trans         &trans        &trans         &trans         &trans                &trans       &trans            &trans
-&kp GRAVE  &kp Q            &kp W            &kp F         &kp P          &kp B         &kp J          &kp L          &kp U                 &kp Y        &kp SEMICOLON     &trans
+&kp GRAVE  &kp Q            &kp W            &kp F         &kp P          &kp B         &kp J          &kp L          &kp U                 &kp Y        &kp SEMICOLON     &kp TAB
 &kp MINUS  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LSHIFT T  &kp G         &kp M          &hmr RSHIFT N  &hmr RIGHT_CONTROL E  &hmr RALT I  &hmr RIGHT_GUI O  &kp APOSTROPHE
 &kp EQUAL  &kp Z            &kp X            &kp C         &kp D          &kp V         &kp K          &kp H          &kp COMMA             &kp DOT      &kp SLASH         &kp BACKSLASH
                                              &kp ESC       &mo 2          &smart_shift  &kp BACKSPACE  &lt 1 SPACE    &kp ENTER
