@@ -61,19 +61,19 @@
 &kp GRAVE  &kp Q            &kp W            &kp F         &kp P          &kp B         &kp J          &kp L          &kp U                 &kp Y        &kp SEMICOLON     &kp TAB
 &kp MINUS  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LSHIFT T  &kp G         &kp M          &hmr RSHIFT N  &hmr RIGHT_CONTROL E  &hmr RALT I  &hmr RIGHT_GUI O  &kp APOSTROPHE
 &kp EQUAL  &kp Z            &kp X            &kp C         &kp D          &kp V         &kp K          &kp H          &kp COMMA             &kp DOT      &kp SLASH         &kp BACKSLASH
-                                             &kp ESC       &mo 2          &smart_shift  &kp BACKSPACE  &lt 1 SPACE    &kp ENTER
-                                                           &iterm         &trans        &kp DELETE     &sk RIGHT_ALT
+                                             &lt 2 ESCAPE  &mo 1          &smart_shift  &kp BACKSPACE  &lt 1 SPACE    &lt 2 ENTER
+                                                           &iterm         &sl 3         &kp DELETE     &sk RIGHT_ALT
             >;
         };
 
-        MoreKeys {
+        Nav {
             bindings = <
-&none  &none   &none   &none   &none   &none  &none     &none          &none      &none      &none  &none
-&none  &none   &none   &none   &none   &none  &none     &none          &none      &none      &none  &none
-&none  &trans  &trans  &trans  &trans  &none  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &none  &none
-&none  &none   &none   &none   &none   &none  &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &none  &none
-                       &none   &mo 3   &none  &none     &none          &none
-                               &none   &none  &none     &none
+&none  &none   &none   &none   &none   &none   &none     &none          &none      &none      &none  &none
+&none  &none   &none   &none   &none   &none   &none     &none          &none      &none      &none  &none
+&none  &trans  &trans  &trans  &trans  &none   &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &none  &none
+&none  &none   &none   &none   &none   &none   &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &none  &none
+                       &trans  &trans  &trans  &trans    &trans         &trans
+                               &trans  &trans  &trans    &trans
             >;
         };
 
@@ -83,7 +83,7 @@
 &trans  &kp LEFT_BRACE        &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_PARENTHESIS  &kp N4  &kp N5  &kp N6  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_BRACKET      &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans  &trans  &trans                 &trans  &mo 3   &trans
+                                      &trans  &trans  &trans                 &trans  &trans  &trans
                                               &trans  &trans                 &trans  &trans
             >;
         };
