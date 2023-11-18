@@ -68,34 +68,34 @@
 
         Nav {
             bindings = <
-&none  &none      &none      &none      &none   &none      &none     &none          &none      &none      &none  &none
-&none  &none      &none      &none      &none   &none      &none     &none          &none      &none      &none  &none
-&none  &trans     &trans     &trans     &trans  &none      &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &none  &none
-&none  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &none   &kp LC(V)  &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &none  &none
-                             &trans     &trans  &trans     &trans    &trans         &trans
-                                        &trans  &trans     &trans    &trans
+&none  &none      &none      &none      &none      &none      &none     &none          &none      &none      &none  &none
+&none  &none      &none      &none      &none      &none      &none     &none          &none      &none      &none  &none
+&none  &trans     &trans     &trans     &trans     &none      &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &none  &none
+&none  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &none      &kp LC(V)  &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &none  &none
+                             &trans     &kp SPACE  &trans     &trans    &trans         &trans
+                                        &trans     &trans     &trans    &trans
             >;
         };
 
         Numbers {
             bindings = <
-&trans  &kp LESS_THAN         &trans  &kp N0  &trans        &kp GREATER_THAN       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACE        &kp N7  &kp N8  &kp N9        &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_PARENTHESIS  &kp N4  &kp N5  &kp N6        &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET      &kp N1  &kp N2  &kp N3        &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans  &kp NUMBER_0  &trans                 &trans  &trans  &trans
-                                              &trans        &trans                 &trans  &trans
+&trans  &kp LESS_THAN         &trans  &kp N0        &trans     &kp GREATER_THAN       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACE        &kp N7  &kp N8        &kp N9     &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_PARENTHESIS  &kp N4  &kp N5        &kp N6     &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET      &kp N1  &kp N2        &kp N3     &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans  &trans
+                                      &kp NUMBER_0  &kp SPACE  &trans                 &trans  &trans  &trans
+                                                    &trans     &trans                 &trans  &trans
             >;
         };
 
         FnKeys {
             bindings = <
-&trans  &trans  &kp F10  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F7   &kp F8   &kp F9   &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F4   &kp F5   &kp F6   &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans   &trans   &trans  &trans  &trans  &trans
-                                  &trans   &trans  &trans  &trans
+&trans  &trans  &kp F10  &kp F11  &kp F12    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F7   &kp F8   &kp F9     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4   &kp F5   &kp F6     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1   &kp F2   &kp F3     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans   &kp SPACE  &trans  &trans  &trans  &trans
+                                  &trans     &trans  &trans  &trans
             >;
         };
 
