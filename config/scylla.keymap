@@ -83,12 +83,12 @@
 
         Base {
             bindings = <
-&mo 4         &trans           &trans           &trans        &kp LC(LG(LS(NUMBER_4)))  &trans      &trans         &kp MINUS            &kp EQUAL             &trans       &trans            &trans
-&kp GRAVE     &kp Q            &kp W            &kp F         &kp P                     &kp B       &kp J          &kp L                &kp U                 &kp Y        &kp SEMICOLON     &trans
-&smart_shift  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml_shift LSHIFT T       &kp G       &kp M          &hmr_shift RSHIFT N  &hmr RIGHT_CONTROL E  &hmr RALT I  &hmr RIGHT_GUI O  &kp APOSTROPHE
-&kp LCTRL     &kp Z            &kp X            &kp C         &kp D                     &kp V       &kp K          &kp H                &kp COMMA             &kp DOT      &kp SLASH         &kp BACKSLASH
-                                                &lt 2 TAB     &lt 1 SPACE               &kp ESCAPE  &kp BACKSPACE  &mo 1                &lt 2 ENTER
-                                                              &iterm                    &mo 3       &lt 3 DELETE   &sk RIGHT_ALT
+&mo 4         &trans           &trans           &trans        &kp LC(LG(LS(NUMBER_4)))  &trans   &trans         &kp MINUS            &kp EQUAL             &trans       &trans            &trans
+&kp GRAVE     &kp Q            &kp W            &kp F         &kp P                     &kp B    &kp J          &kp L                &kp U                 &kp Y        &kp SEMICOLON     &trans
+&smart_shift  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml_shift LSHIFT T       &kp G    &kp M          &hmr_shift RSHIFT N  &hmr RIGHT_CONTROL E  &hmr RALT I  &hmr RIGHT_GUI O  &kp APOSTROPHE
+&kp LCTRL     &kp Z            &kp X            &kp C         &kp D                     &kp V    &kp K          &kp H                &kp COMMA             &kp DOT      &kp SLASH         &kp BACKSLASH
+                                                &lt 2 ESCAPE  &lt 1 SPACE               &kp TAB  &kp BACKSPACE  &mo 1                &lt 2 ENTER
+                                                              &iterm                    &mo 3    &lt 3 DELETE   &sk RIGHT_ALT
             >;
         };
 
