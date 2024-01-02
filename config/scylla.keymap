@@ -78,6 +78,55 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        a_ogonek {
+            bindings = <&kp RA(A)>;
+            key-positions = <13 25>;
+        };
+
+        e_ogonek {
+            bindings = <&kp RA(E)>;
+            key-positions = <32 20>;
+        };
+
+        l_slash {
+            bindings = <&kp RA(L)>;
+            key-positions = <19 7>;
+        };
+
+        o_acute {
+            bindings = <&kp RA(O)>;
+            key-positions = <34 22>;
+        };
+
+        n_acute {
+            bindings = <&kp RA(N)>;
+            key-positions = <31 19>;
+        };
+
+        s_acute {
+            bindings = <&kp RA(S)>;
+            key-positions = <27 15>;
+        };
+
+        c_acute {
+            bindings = <&kp RA(C)>;
+            key-positions = <39 27>;
+        };
+
+        z_acute {
+            bindings = <&kp RA(X)>;
+            key-positions = <38 26>;
+        };
+
+        z_dot {
+            bindings = <&kp RA(Z)>;
+            key-positions = <37 25>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
